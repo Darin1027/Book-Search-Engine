@@ -1,35 +1,35 @@
 [
   {
-    "name": "JavaScript"
+    "name": "Anna Karenina"
   },
   {
-    "name": "HTML"
+    "name": "To Kill a Mockingbird"
   },
   {
-    "name": "CSS"
+    "name": "The Great Gatsby"
   },
   {
-    "name": "Node.js"
+    "name": "One Hundred Years of Solitude"
   },
   {
-    "name": "Express.js"
+    "name": "A Passage to India"
   },
   {
-    "name": "MySQL"
+    "name": "Invisible Man"
   },
   {
-    "name": "MongoDB"
+    "name": "Don Quixote"
   },
   {
-    "name": "React"
+    "name": "Beloved"
   },
   {
-    "name": "GraphQL"
+    "name": "Mrs. Dalloway"
   },
   {
-    "name": "Sequelize"
+    "name": "Things Fall Apart"
   },
   {
-    "name": "Handlebars.js"
+    "name": "Jane Eyre"
   }
 ]
