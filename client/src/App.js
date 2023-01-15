@@ -1,8 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchBooks from './pages/SearchBooks';
-import SavedBooks from './pages/SavedBooks';
-import Navbar from './components/Navbar';
+import React from "react";
+import {
+  ApolloClient, // connection
+  InMemoryCache, // cache authentication
+  ApolloProvider, // provide wraps around app component and allows access to graphql
+  createHttpLink, // format the authentication link --> used for creating client
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context"; // function :D
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // allow react to use routes for dom manipulation
+import SearchBooks from "./pages/SearchBooks";
+import SavedBooks from "./pages/SavedBooks";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -10,17 +17,11 @@ function App() {
       <>
         <Navbar />
         <Routes>
-          <Route 
-            path='/' 
-            element={<SearchBooks />} 
-          />
-          <Route 
-            path='/saved' 
-            element={<SavedBooks />} 
-          />
-          <Route 
-            path='*'
-            element={<h1 className='display-2'>Wrong page!</h1>}
+          <Route path="/" element={<SearchBooks />} />
+          <Route path="/saved" element={<SavedBooks />} />
+          <Route
+            path="*"
+            element={<h1 className="display-2">Wrong page!</h1>}
           />
         </Routes>
       </>
