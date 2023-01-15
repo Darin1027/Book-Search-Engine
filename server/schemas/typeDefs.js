@@ -6,14 +6,23 @@ const typeDefs = gql`
     username: String!
     email: String!
     bookCount: Int
-    savedBooks: [Book]
+    savedBooks: [Book!]!
   }
 
-  type BookInput {
-    bookId: ID!
+  type Book {
+    bookId: String!
     authors: [String]
-    description: String!
-    title: String!
+    description: String
+    title: String
+    image: String
+    link: String
+  }
+
+  input BookInput {
+    bookId: String
+    authors: [String]
+    description: String
+    title: String
     image: String
     link: String
   }
@@ -35,4 +44,4 @@ const typeDefs = gql`
   }
 `;
 
-exports.exports = typeDefs;
+module.exports = typeDefs;
