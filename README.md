@@ -168,7 +168,7 @@ git clone git@github.com:Darin1027/Book-Search-Engine.git
 
 ## Usage
 
-- Ensure you are in your desired directory `root`, `server`, or client`
+- Ensure you are in your desired directory `root`, `server`, or `client`
 - Run the corresponding Script from your `package.json` file in your terminal.
 
 ## License
