@@ -1,11 +1,10 @@
-
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
   "engines": {
-    "node": "16.18.1"
+    "node": "16.3"
   },
   "scripts": {
     "start": "node server/server.js",
@@ -20,6 +19,8 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "mongodb": "^4.13.0"
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-boost": "^0.4.9",
+    "dotenv": "^16.0.3"
   }
 }
